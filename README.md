@@ -134,7 +134,11 @@ Timeline: <br>
   
    <br>
                                
-2. 27/02/2024: Developing the basic schemas of different databases in MySQL Server
+2. 27/02/2024: Developed the basic schemas of different databases in MySQL Server
+
+   <br>
+
+3. 27/02/2024: Developed the Login page
 
    <br>
 
