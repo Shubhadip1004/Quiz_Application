@@ -56,26 +56,26 @@ def login():
         print("Invalid Input")
         login()
 
-# _ _ Driver Code _ _
-try:
-    loading_screen()
-    connection = mysql.connector.connect(
-        host = "localhost", 
-        user = "root", 
-        passwd = "root", 
-        database = "quiz_application")
-    
-    
-    if connection.is_connected():
-        print("Connection is Secure and Successful !!!")
-        cursor = connection.cursor()
-        login()
-    else:
-        print("Failed to Connect to MySQL Database !!!")
-except mysql.connector.error as e:
-    print(f"Error Connecting to the MySQL Database ::: {e}")
-
-    
+def connection_to_database():
+    try:
+        loading_screen()
+        connection = mysql.connector.connect(
+            host = "localhost", 
+            user = "root", 
+            passwd = "root", 
+            database = "quiz_application")
         
-    
-    
+        
+        if connection.is_connected():
+            print("Connection is Secure and Successful !!!")
+            global cursor
+            cursor = connection.cursor()
+            login()
+        else:
+            print("Failed to Connect to MySQL Database !!!")
+    except mysql.connector.error as e:
+        print(f"Error Connecting to the MySQL Database ::: {e}")
+
+
+# _ _ Driver Code _ _
+connection_to_database()
