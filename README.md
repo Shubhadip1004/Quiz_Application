@@ -4,7 +4,11 @@ This is a Quiz Application developed using Python 3.10 and MySQL server.
 
 Description of Quiz Application:
 
+<br>
+
 1. Basic Idea:
+
+<br>
 
 ~ Developing MySQL databases
 
@@ -13,7 +17,10 @@ Description of Quiz Application:
 ~ Code to Implement the Quiz App by connecting the MySQL server
 
 <br>
+
 ~ Develop this software using tkinter module to provide a good GUI (later stages)
+
+<br>
 
 <br>
 
@@ -36,14 +43,16 @@ Initially, 20 questions will be present in the Questions Database among which ra
 <br>
 
 3. Python Code:
+
+<br>
    
  i. Connect the database
  
  ii. Create a authentication system to allow different operations for both admin and user
  
- ii.i. Separate login details by different users 
+   ii.i. Separate login details by different users 
  
- ii.ii Register by the Approval of Admin
+   ii.ii Register by the Approval of Admin
  
  iii. Create the Quiz System 
  
@@ -55,6 +64,8 @@ Initially, 20 questions will be present in the Questions Database among which ra
  
 <br>
 Database Schema:
+
+<br>
 
  1. users{
     
@@ -69,11 +80,11 @@ Database Schema:
     
 	date_and_time: datetime Primary Key
 
-  username: varchar(35) Primary Key
+  	username: varchar(35) Primary Key
   
-  score: integer Not Null
+  	score: integer Not Null
  
-  }
+  	}
  <br>
  
  3. questions{
@@ -99,6 +110,12 @@ Database Schema:
 
 Timeline: <br>
 
-1. 27/02/2024: Idea Proposed <br
+1. 27/02/2024: Idea Proposed
+  
+   <br>
                                
-2. 27/02/2024: Developing the basic schemas of different databases in MySQL Server <br>
+2. 27/02/2024: Developing the basic schemas of different databases in MySQL Server
+
+   <br>
+
+
