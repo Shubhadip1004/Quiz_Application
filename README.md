@@ -106,7 +106,7 @@ Database Schema:
 	}
   <br>
 
- 4. questions {
+ 4. admin_questions {
     
        question_id: integer Primary Key
 
