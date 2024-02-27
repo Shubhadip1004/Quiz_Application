@@ -106,6 +106,26 @@ Database Schema:
 	}
   <br>
 
+ 4. questions {
+    
+       question_id: integer Primary Key
+
+       question: varchar(100) Not Null
+
+       option1: varchar(30) Not Null
+
+       option2: varchar(30) Not Null
+
+       option3: varchar(30) Not Null
+
+       option4: varchar(30) Not Null
+
+       answer: varchar(30) Not Null
+
+       }
+  
+  <br>
+
 
 
 Timeline: <br>
