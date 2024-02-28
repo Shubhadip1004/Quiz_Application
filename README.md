@@ -142,4 +142,8 @@ Timeline: <br>
 
    <br>
 
+4. 28/02/2024: Replaced the old login code with new login code and added register code **(Adding Modularity)**
+
+   <br>
+
 
