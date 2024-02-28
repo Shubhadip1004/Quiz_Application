@@ -31,10 +31,11 @@ def user_login():
     records = cur.fetchall()
     if (user_name,pass_code) in records:
         print("Access Granted !!! ")
-        return user_name
+        return (user_name, True)
     else:
         print("Access Denied !!!")
         print(f"No user '{user_name}' is found !!!")
+        return (user_name, False)
     
     
 
