@@ -30,7 +30,7 @@ Description of Quiz Application:
 
  i. question: It contains Question_ID, Question, Options(1 to 4) and the Answer
  
- ii. scoreboard: It contains Username, Score_Achieved, Date_Time(Primary Key)
+ ii. scoreboard: It contains Username(Primry Key) , Score_Achieved
  
  iii. admin: It will contain the Questions submitted by user. Upon Acceptance, the questions will be transfered from Admin to Questions database.
  
@@ -77,8 +77,6 @@ Database Schema:
  <br>
  
  2. scoreboard{
-    
-	date_and_time: datetime Primary Key
 
   	username: varchar(35) Primary Key
   
