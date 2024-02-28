@@ -16,8 +16,6 @@ def connection_to_database():
         if connect.is_connected():
             print()
             print("Connection is Secure and Successful !!!")
-            # global cursor
-            
             
         else:
             print("Failed to Connect to MySQL Database !!!")
@@ -33,9 +31,11 @@ def user_login():
     records = cur.fetchall()
     if (user_name,pass_code) in records:
         print("Access Granted !!! ")
+        return user_name
     else:
         print("Access Denied !!!")
         print(f"No user '{user_name}' is found !!!")
+    
     
 
 def admin_login():
