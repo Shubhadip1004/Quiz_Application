@@ -7,10 +7,8 @@ passcode varchar(20) not null
 );
 
 create table scorecard(
-date_and_time datetime ,
-username varchar(35) ,
-score integer not null ,
-primary key(date_and_time, username)
+username varchar(35) Primary Key,
+score integer not null 
 );
 
 create table questions(
