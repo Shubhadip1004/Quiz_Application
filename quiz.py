@@ -14,7 +14,7 @@ def connection_to_database():
         
         if connect.is_connected():
             print()
-            print("Connection is Secure and Successful !!!")
+            # print("Connection is Secure and Successful !!!")
             global cur
             cur = connect.cursor()
             
