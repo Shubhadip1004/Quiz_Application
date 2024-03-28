@@ -18,10 +18,6 @@ Description of Quiz Application:
 
 <br>
 
-~ Develop this software using tkinter module to provide a good GUI (later stages)
-
-<br>
-
 <br>
 
 2. Database Contents:
@@ -58,9 +54,6 @@ Initially, 20 questions will be present in the Questions Database among which ra
  
  iv. Questions can be added on the system by the user upon approval by admin
 
- 
- <br>
- v. Use Tkinter for GUI development of the project
  
 <br>
 Database Schema:
@@ -124,24 +117,18 @@ Database Schema:
   
   <br>
 
+<br>
+How To Use:
+<br>
+
+1. Run the "quiz_application_query.sql" <br>
+2. Check whether all the required modules (mysql.connector, sys, time, random) are present or not. <br>
+3. Run the Main function <br>
+
+<br>
+<br>
 
 
-Timeline: <br>
 
-1. 27/02/2024: Idea Proposed
-  
-   <br>
-                               
-2. 27/02/2024: Developed the basic schemas of different databases in MySQL Server
-
-   <br>
-
-3. 27/02/2024: Developed the Login page
-
-   <br>
-
-4. 28/02/2024: Replaced the old login code with new login code and added register code **(Adding Modularity)**
-
-   <br>
 
 
