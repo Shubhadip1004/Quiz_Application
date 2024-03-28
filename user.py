@@ -18,7 +18,7 @@ def connection_to_database():
         
         if connect.is_connected():
             print()
-            print("Connection is Secure and Successful !!!")
+            # print("Connection is Secure and Successful !!!")
             global cursor
             cursor = connect.cursor()
             
@@ -30,33 +30,36 @@ def connection_to_database():
 
 def user_driver():
     (username, flag) = login.user_login()
-    if flag:
+    def user_main(username):
         print('''
-        1. Attempt Quiz
-        2. Submit Question
-        3. Show Current Best Score
-        4. Exit
-        Press any other Integer to go to Main Menu
+            1. Attempt Quiz
+            2. Submit Question
+            3. Show Current Best Score
+            4. Exit
+            Press any other Integer to go to Main Menu
         ''')
-            
+                
         option = int(input("Enter Your Choice ::: "))
         if option == 1:
             quiz.contest(username)
-            user_driver()
+            user_main(username)
         elif option == 2:
             question_submission.submission()
-            user_driver()
+            user_main(username)
         elif option == 3:
             current_best.show(username)
-            user_driver()
+            user_main(username)
         elif option == 4:
             sys.exit()
         else:
             import main
             main.driver()
+    
+    if flag:
+        user_main(username)
     else:
         print("Signing Off ... ")
-        sys.exit()
+        return None
 
 # _ _ driver code _ _
 # user_driver()
