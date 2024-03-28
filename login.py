@@ -1,4 +1,3 @@
-import sys
 import mysql.connector
 
 def connection_to_database():
@@ -15,7 +14,7 @@ def connection_to_database():
         
         if connect.is_connected():
             print()
-            print("Connection is Secure and Successful !!!")
+            # print("Connection is Secure and Successful !!!")
             
         else:
             print("Failed to Connect to MySQL Database !!!")
@@ -47,6 +46,7 @@ def admin_login():
     if user_name == "admin" and pass_code == "admin":
         print("Authentication Successful !!!")
         print("Welcome Admin !!!")
+        return True
     else:
         print("Access Denied !!! ")
-        sys.exit()
+        return False
